@@ -61,7 +61,15 @@ for example `myproject.settings.py`:
 WEBLINE_NOTIFICATIONS_LIMIT = 50  
 ...
 ```
-
+##Project urls.py include the webline_notifications.urls 
+```
+urlpatterns = [
+	....
+	path('admin/', admin.site.urls),
+	path('', include('webline_notifications.urls')),
+	....
+]
+```
 ##Usage
 to notify every thing you want:
 
