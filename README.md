@@ -40,7 +40,7 @@ INSTALLED_APPS = (
 Then run migrations:
 
 ```
-$ python manage.py migrate webline-notifications
+$ python manage.py migrate webline_notifications
 ```
 Then collectstatic:
 
@@ -69,7 +69,7 @@ to notify every thing you want:
  2. use Notification.send to send notification
 
 ```
-from webline_notification.model import Notification
+from webline_notifications.models import Notification
 
 Notification.send(
 	...
